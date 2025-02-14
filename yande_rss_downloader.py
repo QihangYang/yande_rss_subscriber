@@ -151,10 +151,6 @@ class YandeDownloader:
                 }])
                 new_index.to_csv(index_path, mode='a', header=not index_path.exists(), index=False)
 
-            # 测试模式下只下载一张图片
-            if self.test:
-                break
-
 def main():
     """主函数"""
     import argparse
